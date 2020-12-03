@@ -1,0 +1,12 @@
+server:
+  port: 16000
+eureka:
+  instance:
+    hostname: eureka16000.com
+  client:
+    #表示不注册自己
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka16001.com:16000/eureka
+#      defaultZone: http://eureka16001.com:16001/eureka
